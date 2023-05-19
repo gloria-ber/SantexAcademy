@@ -1,56 +1,390 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Normalizer -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+
+    <!-- Fuentes de Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Hoja de estilo -->
+    <link rel="stylesheet" href="/maquetacion/assets/css/style.css" />
+
     <title>Xacademy Clase 1 maquetacion</title>
-    <style>
-        body {
-            margin: 0;
-        }
-        p {
-            margin-right: 40px;
-        }
-        h1 {
-            margin: 0px 400px;
-            text-align: center;
-        }
-        button.redondo {
-            background-color: white;
-            border: 1px solid black;
-            border-radius: 25px;
-            padding: 0px 20px;
-            height: 32px;
-        }
-        div#introduction-actions {
-            display: flex;
-            justify-content: center;
-        }
-    </style>
-</head>
-<body>
-    <div id="header" style="border-bottom: 1px solid gray; display: flex; padding: 10px 100px; justify-content: space-between">
+  </head>
+  <body>
+    <!-- Barra de navegación -->
+    <header id="header">
+      <div class="navbar">
         <div id="header-left">
-            <img src="logo.svg">
+          <a href="#"><img src="./assets/img/logo.svg" /></a>
         </div>
-        <div id="header-right" style="display: flex; align-items: center;">
-            <p>Nosotros</p>
-            <p>Programas</p>
-            <p>Capaciontaciones</p>
-            <p>Alianzas</p>
-            <p>Contacto</p>
-            <button class="redondo">Sumate +</button>
+        <ul id="header-right">
+          <a href="#"><li>Nosotros</li></a>
+          <a href="#"><li>Programas</li></a>
+          <a href="#"><li>Capacitaciones</li></a>
+          <a href="#"><li>Alianzas</li> </a>
+          <a href="#"><li>Contacto</li></a>
+          <button class="primario">Sumate +</button>
+        </ul>
+      </div>
+    </header>
+
+    <!-- Introducción -->
+    <section id="introduction">
+      <div id="introduction-text">
+        <h1>
+          Somos una Fundación dedicada a mejorar la calidad de vida de las
+          personas y su entorno, a través de la tecnología.
+        </h1>
+      </div>
+      <div id="introduction-actions">
+        <button class="primario">Contactanos -></button>
+        <button class="secundario">Sumate +</button>
+      </div>
+    </section>
+
+    <!-- Impacto -->
+    <section id="impact">
+      <div id="impact-left">
+        <div id="impact-title">
+          <h2>.Impacto</h2>
         </div>
-    </div>
-    <div id="introduction" style="padding: 48px;">
-        <div id="introduction-text">
-            <h1>Somos una Fundación dedicada a mejorar la calidad de vida de las personas y su entorno, a través de la tecnología.</h1>
+        <div id="impact-text">
+          <p>
+            Buscamos construir alianzas y fortalecer vínculos para generar una
+            transformación real en la comunidad. Trabajamos para acercar la
+            tecnología innovadora y disruptiva del sector privado hacia el
+            sector social.
+          </p>
         </div>
-        <div id="introduction-actions" style="margin-top: 25px;">
-            <button class="redondo">Contactanos -></button>
-            <button class="redondo" style="margin-left: 14px;">Sumate +</button>
+      </div>
+      <div id="impact-rigth">
+        <div id="impact-numbers">
+          <div class="number-box">
+            <h2 class="numbers">58</h2>
+            <h6>Localidades</h6>
+          </div>
+          <div class="number-box">
+            <h2 class="numbers"><span id="simbolo-mas">+</span>50</h2>
+            <h6>Mentores</h6>
+          </div>
+          <div class="number-box">
+            <h2 class="numbers">301</h2>
+            <h6>Participantes</h6>
+          </div>
         </div>
-    </div>
-</body>
+      </div>
+    </section>
+
+    <!-- Parallax -->
+    <section id="parallax-container"></section>
+
+    <!-- Programas -->
+    <section class="section-container">
+      <div class="section-title">
+        <h2>.Programas</h2>
+      </div>
+      <div class="section-body">
+        <div class="section-img">
+          <img
+            class="img-left"
+            src="./assets/img/xacademy.jpg"
+            alt="imagen de xacademy"
+          />
+        </div>
+        <div class="section-component">
+          <div class="section-component-title">
+            <img src="./assets/img/xacademy.svg" alt="logo de xacademy" />
+          </div>
+          <div class="section-component-content">
+            <p>
+              xAcademy es un programa de formación en tecnología llevado
+              adelante por la Fundación Tecnología con Propósito junto a Santex
+              que busca promover un cambio positivo en la comunidad a través de
+              la educación en IT, apuntando a lograr la inserción laboral de
+              personas en el mundo tecnológico.
+            </p>
+          </div>
+          <div class="section-component-button">
+            <button class="primario">Más info -></button>
+          </div>
+        </div>
+      </div>
+      <div class="section-body">
+        <div class="section-component">
+          <div class="section-component-title">
+            <h3>Robótica educativa: la tecnología del futuro</h3>
+          </div>
+          <div class="section-component-content">
+            <p>
+              Durante el curso, los alumnos y alumnas a través de la robótica
+              desarrollan la curiosidad, el autodidactismo y las habilidades
+              blandas necesarias para afrontar la revolución tecnológica del
+              siglo XXI.
+            </p>
+          </div>
+          <div class="section-component-button">
+            <button class="primario">Más info -></button>
+          </div>
+        </div>
+        <div class="section-img">
+          <img
+            class="img-right"
+            src="./assets/img/robotica-educativa.jpg"
+            alt="imagen de robótica educativa"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Capacitaciones -->
+    <section class="section-container">
+      <div class="section-title">
+        <h2>.Capacitaciones</h2>
+      </div>
+      <div class="section-body">
+        <div class="section-img">
+          <img
+            class="img-left"
+            src="./assets/img/estafas-virtuales.jpg"
+            alt="imagen de xacademy"
+          />
+        </div>
+        <div class="section-component">
+          <div class="section-component-title">
+            <h3>Estafas virtuales: ¿cómo protegernos?</h3>
+          </div>
+          <div class="section-component-content">
+            <p>
+              Los canales de comunicación a través de medios digitales cobraron
+              gran protagonismo a partir de la pandemia. Al mismo tiempo, se
+              perfeccionan cada vez más rápido las modalidades de estafas y
+              fraudes virtuales. En esta capacitación vas a aprender diferentes
+              tips y consejos útiles para navegar de manera más segura.
+            </p>
+          </div>
+          <div class="section-component-button">
+            <button class="primario">Más info -></button>
+          </div>
+        </div>
+      </div>
+      <div class="section-body">
+        <div class="section-component">
+          <div class="section-component-title">
+            <h3>Seguridad informática para infancias</h3>
+          </div>
+          <div class="section-component-content">
+            <p>
+              ¿Navegamos seguros en internet? La propuesta es una charla para
+              niños y niñas donde se brindan herramientas de seguridad y
+              autocuidado digital.
+            </p>
+          </div>
+          <div class="section-component-button">
+            <button class="primario">Más info -></button>
+          </div>
+        </div>
+        <div class="section-img">
+          <img
+            class="img-right"
+            src="./assets/img/seguridad-informatica-para-infancias.jpg"
+            alt="imagen de robótica educativa"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Equipo -->
+    <section id="section-cards-container">
+      <div class="section-title">
+        <h2>.Equipo</h2>
+      </div>
+      <div class="card-container">
+        <div class="card">
+          <div class="card-header">
+            <img src="./assets/img/twp-juan.png" alt="foto de Juan Santiago" />
+          </div>
+          <div class="card-body">
+            <h3>Juan Santiago</h3>
+            <h4>Presidente</h4>
+            <div class="card-linkedin">
+              <a
+                class="fa-brands fa-linkedin"
+                href="https://www.linkedin.com/in/juan-santiago-1461942/"
+                target="_blank"
+              >
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header">
+            <img
+              src="./assets/img/twp-walter.png"
+              alt="foto de Walter Abrigo"
+            />
+          </div>
+          <div class="card-body">
+            <h3>Walter Abrigo</h3>
+            <h4>Secretario</h4>
+            <div class="card-linkedin">
+              <a
+                class="fa-brands fa-linkedin"
+                href="https://www.linkedin.com/in/walterabrigo/"
+                target="_blank"
+              >
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header">
+            <img
+              src="./assets/img/twp-gabriela.png"
+              alt="foto de Gabriela Fernandez"
+            />
+          </div>
+          <div class="card-body">
+            <h3>Gabriela Fernandez</h3>
+            <h4>Comisión Directiva</h4>
+            <div class="card-linkedin">
+              <a
+                class="fa-brands fa-linkedin"
+                href="https://www.linkedin.com/in/gabriela-fernandez-53475b20/"
+                target="_blank"
+              >
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header">
+            <img
+              src="./assets/img/twp-gabriel.png"
+              alt="foto de Gabriel Dubini"
+            />
+          </div>
+          <div class="card-body">
+            <h3>Gabriel Dubini</h3>
+            <h4>Tesorero</h4>
+            <div class="card-linkedin">
+              <a class="fa-brands fa-linkedin" href="#" target="_blank"> </a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header">
+            <img
+              src="./assets/img/twp-florencia.png"
+              alt="foto de Florencia D’Agostino"
+            />
+          </div>
+          <div class="card-body">
+            <h3>Florencia D’Agostino</h3>
+            <h4>Dirección Ejecutiva</h4>
+            <div class="card-linkedin">
+              <a
+                class="fa-brands fa-linkedin"
+                href="https://www.linkedin.com/in/florencia-dagostino/"
+                target="_blank"
+              >
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header">
+            <img
+              src="./assets/img/twp-celeste.png"
+              alt="foto de Celeste Torresi"
+            />
+          </div>
+          <div class="card-body">
+            <h3>Celeste Torresi</h3>
+            <h4>Comisión Directiva</h4>
+            <div class="card-linkedin">
+              <a
+                class="fa-brands fa-linkedin"
+                href="https://www.linkedin.com/in/celeste-torresi-77094739/"
+                target="_blank"
+              >
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header">
+            <img src="./assets/img/twp-lucia.png" alt="foto de Lucia Jaimez" />
+          </div>
+          <div class="card-body">
+            <h3>Lucia Jaimez</h3>
+            <h4>Directora Academy</h4>
+            <div class="card-linkedin">
+              <a
+                class="fa-brands fa-linkedin"
+                href="https://www.linkedin.com/in/luc%C3%ADa-jaimez-365416151/"
+                target="_blank"
+              >
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header">
+            <img
+              src="./assets/img/agustin-chino.png"
+              alt="foto de Agustín Chino"
+            />
+          </div>
+          <div class="card-body">
+            <h3>Agustín Chino</h3>
+            <h4>Coord. Área Inclusión Social</h4>
+            <div class="card-linkedin">
+              <a
+                class="fa-brands fa-linkedin"
+                href="https://www.linkedin.com/in/agustin-chino-7b5561274/"
+                target="_blank"
+              >
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header">
+            <img src="./assets/img/enzo-dotto.png" alt="foto de Enzo Dotto" />
+          </div>
+          <div class="card-body">
+            <h3>Enzo Dotto</h3>
+            <h4>Relaciones Institucionales</h4>
+            <div class="card-linkedin">
+              <a
+                class="fa-brands fa-linkedin"
+                href="https://www.linkedin.com/in/edotto/"
+                target="_blank"
+              >
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script
+      src="https://kit.fontawesome.com/14b1b88f84.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="simpleparallax.js"></script>
+  </body>
 </html>

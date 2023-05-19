@@ -1,0 +1,280 @@
+html {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+}
+
+#header {
+  border-bottom: 1px solid gray;
+  display: flex; 
+  padding: 0.6em ; 
+  justify-content: center;
+  position: sticky;
+  top: 0;
+  background-color: #ffffff;
+  width: 100%;
+  
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  font-size: 0.8em;
+
+}
+
+#header-left {
+  align-self: center;
+}
+
+#header-right {
+  display: flex;
+  align-items: center;
+  
+}
+
+#header-right li {
+  padding-right: 3em;
+  list-style: none;
+  
+}
+
+a, a:visited {
+  text-decoration: none;
+  color: #000000;
+}
+
+a:hover {
+  color: #6b53f0;
+}
+
+/* Botones */
+
+button {
+  font-size: 0.8em;
+  border-radius: 1.5em;
+  padding: 0 2em;
+  height: 3em;
+  align-self: center;
+}
+
+button.primario {
+  background-color: white;
+  border: 0.2em solid black;
+}
+
+button.primario:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+button.secundario {
+  background-color: white;
+  border: 0.2em solid #6b53f0;  
+  color: #6b53f0;   
+  margin-left: 0.85em;
+}
+
+button.secundario:hover {
+  background-color: #6b53f0;
+  color: #ffffff;
+}
+
+/* Introducción */
+
+#introduction {
+    padding: 4em 22em;
+    display: block;    
+    text-size-adjust: 100%;
+    text-align: center;
+}
+
+#introduction-actions {
+  display: flex;
+  justify-content: center;
+  margin: 1.5em ;  
+}
+
+/* Impacto */
+
+#impact {
+  padding: 5% 15%;
+  display: flex;
+  justify-content: space-between;
+  text-size-adjust: 100%;
+  text-align: left;
+  align-items: center;
+  background-color: #000000;
+  color: #ffffff;
+}
+ 
+
+#impact-numbers {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 3em;
+  align-items: center;
+} 
+
+#impact-text {
+  box-sizing: border-box;
+  display: block;
+  padding-right: 8em;
+  text-size-adjust: 100%;
+  
+}
+
+.number-box {
+  margin: 2em;
+  text-align: center;
+  padding: 0;
+}
+
+.numbers {
+  font-size: 3em;
+  line-height: 0;
+}
+
+#simbolo-mas {
+  color: #6b53f0;
+}
+
+/* Parallax */
+
+#parallax-container {
+  background-image: url("../img/twp-home.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+}
+
+
+/* Secciones y componentes*/
+
+.section-title {
+  display: inline;
+  font-size: 1.5em;
+  padding-bottom: 5em;
+  /*padding: 3em 10em;*/
+}
+
+.section-container {
+  padding: 4em 4em 0 4em;
+
+}
+
+.section-body {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-bottom: 2em;  
+  
+}
+
+.section-component {
+  padding: 1em 2em 1em 4em;
+  width: 40%;
+}
+
+
+.section-component-title img {
+  width: 12em;
+}
+.section-component-content {
+  font-size: 0.9em;
+  line-height: 1.5em;
+  padding-bottom: 2em;
+  width: 30em;
+}
+
+.img-left {
+  border-radius: 0 3em 3em 3em;
+  margin-bottom: 0;
+  
+  
+}
+
+.img-right {
+  border-radius: 3em 3em 0 3em;
+  margin-bottom: 0;
+  
+}
+
+/* Equipo */
+
+#section-cards-container {
+  padding: 4em;
+  background-color: #f4f4f5;
+}
+.card-container {  
+  display: flex;  
+  flex-wrap: wrap;
+  align-items: center;  
+  padding-bottom: 2em;
+}
+
+.card {
+  display: flex;
+  flex-direction: column; 
+  justify-content: space-between;
+  text-align: center;
+  background-color: #ffffff;
+  margin: 2em 0.61em ;
+  line-height: 0;
+  border-radius: 1em 1em 1em 0;  
+  
+}
+.card-header img {
+  border-radius: 1em 1em 0 0;
+  width: 14em;
+  
+}
+
+.card span {
+  border-color: 1em solid #000000;
+  border-radius: 100%;
+
+}
+
+.card-body h4 {
+  padding-top: 0.2em;
+  color: #8c939c;
+  font-weight: 400;
+  font-size: 0.9em;
+  
+}
+
+.card-body {
+  padding: 2em 0;
+  
+}
+
+.fa-linkedin {
+  font-size: 1.5em;
+  border-radius: 50%;
+}
+/*
+@media(width <= 700 px){
+    html {
+        font-size: 10px;
+    }
+}
+
+@media(width >= 2700px) {
+    html {
+        font-size: 20px;
+    }
+}
+
+@media(width >= 3200px) {
+    html {
+        font-size: 24px;
+    }
+
+}*/

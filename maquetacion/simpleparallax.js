@@ -1,0 +1,1 @@
+simpleParallax('#parallax-container',6);
